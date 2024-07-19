@@ -1,0 +1,51 @@
+header {
+    width: 100%;
+}
+
+header nav {
+    display: none;
+    width: 100%;
+    padding: 0 1.4rem;
+    background-color: var(--bg-color);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    z-index: 99;
+    transform: translateY(0);
+    transition: bottom 2s ease, transform 1s ease;
+}
+
+header nav.active {
+    bottom: 0;
+}
+
+header nav.scroll {
+    transform: translateY(100%);
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.1rem;
+    width: 4rem;
+    height: 3rem;
+    color: #000;
+}
+
+header nav a i {
+    font-size: 1.2rem;
+}
+
+header nav a span {
+    font-size: 0.6rem;
+}
+
+header nav a:hover {
+    background-color: #000;
+    color: #fff;
+}

@@ -1,0 +1,47 @@
+.time {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 10rem 8rem;
+    position: relative;
+}
+
+.time h2 {
+    font-family: var(--sacramento);
+    font-size: var(--fontSize-heading-base);
+    font-weight: 400;
+}
+
+.time div:nth-of-type(1) {
+    margin-top: 2rem;
+}
+
+.time div:nth-of-type(1) div h3 {
+    font-family: var(--sacramento);
+    font-size: var(--fontSize-heading-lg);
+    font-weight: 400;
+    /*margin-bottom: 1rem;*/
+}
+
+.time div:nth-of-type(1) div:nth-of-type(2){
+    margin-top: 2rem;
+}
+
+.time a {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    background-color: #000;
+    margin: 2rem auto 1rem;
+    border-radius: 20px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.time a + p + i {
+    right: 8rem;
+    top: 22rem;
+}

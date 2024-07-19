@@ -1,0 +1,134 @@
+.bride {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 10rem 8rem;
+    position: relative;
+}
+
+.bride h2 {
+    font-size: 1.6rem;
+    font-family: var(--arabic);
+    font-weight: 400;
+}
+
+.bride h3 {
+    font-size: var(--fontSize-heading-base);
+    font-family: var(--sacramento);
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.bride .bride_couple,
+.bride .bride_couple ul,
+.bride .bride_couple li,
+.bride .bride_couple li figure {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bride .bride_couple {
+    margin-top: 4rem;
+}
+
+.bride .bride_couple ul {
+    gap: 1rem;
+}
+
+.bride .bride_couple li figure img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--shadow-md);
+}
+
+.bride .bride_couple li figure figcaption {
+    font-size: var(--fontSize-heading-base);
+    margin: 1rem 0;
+    font-family: var(--sacramento);
+}
+
+.bride .bride_couple span {
+    font-size: 3.4rem;
+    font-family: var(--sacramento);
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.bride i, .hadist i, .time a + p + i, .galeri > i {
+    font-size: 3rem;
+    color: #908d8d;
+    position: absolute;
+    z-index: 10;
+    animation: upAndDown 3s infinite;
+}
+
+.bride i:nth-of-type(1) {
+    top: 14rem;
+    right: 8rem;
+}
+
+.bride i:nth-of-type(2){
+    left: 8rem;
+    top: 24rem;
+}
+
+.bride i:nth-of-type(3) {
+    top: 54rem;
+    right: 8rem;
+}
+
+.bride i:nth-of-type(4){
+    top: 60rem;
+    left: 8rem;
+}
+
+.bride i:nth-of-type(5){
+    right: 8rem;
+    bottom: 6rem;
+}
+
+.hadist {
+    width: 100%;
+    padding: 4rem 8rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.hadist h2 {
+    font-size: var(--fontSize-heading-base);
+    font-family: var(--sacramento);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hadist p span {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.hadist i {
+    top: 16rem;
+    left: 8rem;
+}
+
+.hadist svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -10;
+}
+
+.hadist svg:nth-of-type(1){
+    top: -8rem;
+}
+
+.hadist svg:nth-of-type(2){
+    bottom: -15rem;
+}

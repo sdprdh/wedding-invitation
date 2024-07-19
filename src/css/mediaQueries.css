@@ -1,0 +1,187 @@
+@media screen and (max-width: 768px) {
+    header nav {
+        display: flex;
+    }
+
+    .home svg {
+        bottom: -5rem;
+    }
+
+    .bride, .time{
+        padding: 6rem 1.4rem 8rem;
+    }
+
+    .bride h2, .bride h3 {
+        font-size: 1.8rem;
+    }
+
+    .bride i:nth-of-type(1) {
+        right: 1.4rem;
+        top: 12.5rem;
+    }
+
+    .bride i:nth-of-type(2) {
+        left: 1.4rem;
+        top: 24rem;
+    }
+
+    .bride i:nth-of-type(3) {
+        right: 1.4rem;
+        top: 55rem;
+    }
+
+    .bride i:nth-of-type(4) {
+        left: 1.4rem;
+        top: 60rem;
+    }
+
+    .bride i:nth-of-type(5) {
+        right: 1.4rem;
+    }
+
+    .hadist {
+        padding: 2rem 1.4rem;
+    }
+
+    .hadist i {
+        left: 1.4rem;
+        top: 24rem;
+    }
+
+    .hadist svg:nth-of-type(1) {
+        top: -4rem;
+    }
+
+    .hadist svg:nth-of-type(2) {
+        bottom: -5rem;
+    }
+
+    .time a + p + i {
+        right: 1.4rem;
+        top: 16rem;
+    }
+
+    .galeri {
+        margin-top: -6rem;
+        padding: 4rem 1.4rem;
+    }
+
+    .galeri .container {
+        padding: 0 1rem 1rem;
+    }
+
+    .galeri .container figure {
+        margin-top: -1rem;
+    }
+
+    .galeri .container figure img {
+        height: 14rem;
+    }
+
+    .galeri .container ul {
+        bottom: 5rem;
+    }
+
+    .galeri .container ul li {
+        width: 1rem;
+        height: 0.2rem;
+    }
+
+    .galeri .container button:nth-of-type(1),
+    .galeri .container button:nth-of-type(2) {
+        top: 12.4rem;
+        font-size: 3rem;
+    }
+
+    .galeri .container button:nth-of-type(1) {
+        left: 0.8rem;
+    }
+
+    .galeri .container button:nth-of-type(2){
+        right: 0.8rem;
+    }
+
+    .galeri div:nth-of-type(2) {
+        padding: 0 1rem 4rem;
+    }
+
+    .galeri div:nth-of-type(2) > div {
+        margin-top: -1rem;
+        padding: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        gap: 1rem;
+    }
+
+    .galeri div:nth-of-type(2) button {
+        font-size: 1.4rem;
+    }
+
+    .galeri > i {
+        top: 2rem;
+        left: 3rem;
+    }
+
+    .wishas {
+        padding: 1rem 1.4rem 2rem;
+        margin-top: -14rem;
+    }
+
+    .wishas div:nth-of-type(1) > div{
+        flex-direction: column;
+    }
+
+    .wishas div:nth-of-type(1) > div figure {
+        width: 100%;
+    }
+
+    .wishas div:nth-of-type(1) > div figure img {
+        width: 8rem;
+    }
+
+    .wishas div:nth-of-type(2) {
+        padding: 2rem 1rem;
+    }
+
+    .wishas div:nth-of-type(2) > form {
+        margin-top: -1rem;
+    }
+
+    .wishas div:nth-of-type(3) {
+        padding: 2rem 1rem;
+    }
+
+    .wishas div:nth-of-type(3) ul li {
+        gap: 0.6rem;
+    }
+
+    .wishas div:nth-of-type(3) .button-grup  button {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .wishas svg:nth-of-type(1){
+        top: -4rem;
+    }
+
+    .wishas svg:nth-of-type(2) {
+        bottom: -5rem;
+    }
+
+    .audio button {
+        bottom: 5rem;
+        right: 0.8rem;
+    }
+
+    footer {
+        margin-top: 4rem;
+        padding: 1rem 1.4rem 3.4rem;
+    }
+
+    footer h2 {
+        font-size: 2rem;
+    }
+
+    footer > div a {
+        font-size: 0.6rem;
+    }
+}

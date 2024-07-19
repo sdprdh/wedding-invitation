@@ -1,0 +1,170 @@
+.galeri {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 4rem 8rem 12rem;
+    margin-top: -6rem;
+    position: relative;
+}
+
+.galeri .container {
+    width: 100%;
+    padding: 0 1.5rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -1px 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.galeri .container h2, .galeri div:nth-of-type(2) h2 {
+    font-family: var(--sacramento);
+    font-size: var(--fontSize-heading-base);
+    font-weight: 400;
+    padding: 2rem 1rem;
+}
+
+.galeri .container figure {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.galeri .container figure::-webkit-scrollbar,
+.galeri div:nth-of-type(2)::-webkit-scrollbar {
+    display: none;
+}
+
+.galeri .container figure img {
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: var(--transition-small);
+}
+
+.galeri .container ul {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5.6rem;
+}
+
+.galeri .container ul li {
+    width: 1.8rem;
+    height: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.galeri .container ul li:hover, .galeri .container ul li.active {
+    background-color: #fff;
+}
+
+.galeri .container button:nth-of-type(1),
+.galeri .container button:nth-of-type(2) {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.5);
+    background: none;
+    border: none;
+    position: absolute;
+    top: 24.6rem;
+}
+
+.galeri .container button:nth-of-type(1) i:hover,
+.galeri .container button:nth-of-type(2) i:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.galeri .container button:nth-of-type(1) {
+    left: 2rem;
+}
+
+.galeri .container button:nth-of-type(2) {
+    right: 2rem;
+}
+
+.galeri .container button:nth-of-type(3) {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-top: 1rem;
+    transition: var(--transition-small);
+}
+
+.galeri .container button:nth-of-type(3):hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.galeri div:nth-of-type(2) {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+    overflow-y: auto;
+    transition: all .3s ease;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: bottom;
+}
+
+.galeri div:nth-of-type(2) > div {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.galeri div:nth-of-type(2) > div img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.galeri div:nth-of-type(2) button {
+    padding:0;
+    font-size: 2rem;
+    background:none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transition: var(--transition-small);
+}
+
+.galeri div:nth-of-type(2) button:hover i {
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+}
+
+.galeri div:nth-of-type(2).active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.galeri > i {
+    top:2rem;
+    left: 10rem;
+}
