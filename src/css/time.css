@@ -20,7 +20,6 @@
     font-family: var(--sacramento);
     font-size: var(--fontSize-heading-lg);
     font-weight: 400;
-    /*margin-bottom: 1rem;*/
 }
 
 .time div:nth-of-type(1) div:nth-of-type(2){
@@ -30,7 +29,7 @@
 .time a {
     padding: 0.5rem 1rem;
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: #000;
     margin: 2rem auto 1rem;
     border-radius: 20px;
@@ -39,6 +38,10 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+}
+
+.time a i {
+    font-size: 1.2rem;
 }
 
 .time a + p + i {

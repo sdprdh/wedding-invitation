@@ -3,7 +3,7 @@
     --bg-color: #f8f9fa;
 
     --fontSize-heading-lg: 3rem;
-    --fontSize-heading-base: 2.4rem;
+    --fontSize-heading-base: 2.8rem;
     --fontSize-text-base: 1rem;
 
     --sacramento: Sacramento, cursive;
@@ -30,6 +30,15 @@ html {
 body {
     font-family: 'Josefin Sans', sans-serif;
     color: var(--primary-font-color);
+    overflow-y: hidden;
+}
+
+body.active {
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 p {
@@ -51,8 +60,8 @@ p {
     right: 1rem;
     bottom: 1rem;
     cursor: pointer;
-    transform: translateX(100%);
-    transition: 2s transform ease;
+    transform: translateX(200%);
+    transition: 1.5s transform ease;
 }
 
 .audio button.show {

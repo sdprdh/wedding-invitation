@@ -17,7 +17,7 @@
 }
 
 .home h2 {
-    font-size: var(--fontSize-heading-base);
+    font-size: 2.4rem;
     font-family: var(--sacramento);
     font-weight: 400;
 }
@@ -35,7 +35,7 @@
 }
 
 .home figure figcaption {
-    margin: 0 0 1rem;
+    margin: 0 0 0.5rem;
     font-weight: 400;
     font-family: var(--sacramento);
     font-size: var(--fontSize-heading-lg);
@@ -45,10 +45,38 @@
     font-weight: 500;
 }
 
+.home .home-time {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.home .home-time div {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.home .home-time div p {
+    font-size: 0.8rem;
+    line-height: normal;
+}
+
+.home .home-time div p span {
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
+}
+
 .home a {
     padding: 0.5rem 1rem;
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: #000;
     margin: 1rem auto;
     border-radius: 20px;
@@ -57,6 +85,10 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+}
+
+.home a i {
+    font-size: 1.2rem;
 }
 
 .home .scroll_down {

@@ -3,6 +3,7 @@ import {renderElement} from "../utils/helper.js";
 
 export const navbar = () => {
     const containerNavbar = document.querySelector('nav');
+    const audioButton = document.querySelector('.audio button');
 
     const listItemNavbar = (data) => (
         ` <a href=${data.path}>

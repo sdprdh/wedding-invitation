@@ -14,18 +14,20 @@
     <meta property="og:title" content="Wedding Invitation - Temukan Undangan Pernikahan Simpel dan Kekinian">
     <meta property="og:description"
           content="Temukan undangan pernikahan simpel, menarik, dan kekinian untuk hari istimewa Anda.">
-    <!--    <meta property="og:image" content="https://example.com/image.jpg">-->
-    <meta property="og:url" content="https://wedding-invitation.vercel.app">
+    <meta property="og:image"
+          content="https://sandiperdiansah.github.io/wedding-invitation/src/assets/images/couple.png">
+    <meta property="og:url" content="https://sandiperdiansah.github.io/wedding-invitation">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Wedding Invitation - Temukan Undangan Pernikahan Simpel dan Kekinian">
     <meta property="twitter:description"
           content="Temukan undangan pernikahan simpel, menarik, dan kekinian untuk hari istimewa Anda.">
-    <!--    <meta property="twitter:image" content="https://example.com/image.jpg">-->
+    <meta property="twitter:image"
+          content="https://sandiperdiansah.github.io/wedding-invitation/src/assets/images/couple.png">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://wedding-invitation.vercel.app">
+    <link rel="canonical" href="https://sandiperdiansah.github.io/wedding-invitation">
 
     <!-- Fonts Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,10 +65,21 @@
 </header>
 
 <main role="main">
+    <section class="welcome" aria-labelledby="welcome-title">
+        <h2 id="welcome-title">The Wedding Of</h2>
+        <figure></figure>
+        <p></p>
+        <button type="button" aria-label="Buka Undangan">
+            <i class="bx bxs-envelope-open"></i>
+            <span>Buka Undangan</span>
+        </button>
+    </section>
+
     <section class="home" id="home" aria-labelledby="home-title">
         <h2 id="home-title">Undangan Pernikahan</h2>
         <figure></figure>
         <h3></h3>
+        <div class="home-time"></div>
         <a href="" target="_blank" role="link" aria-label="Simpan ke kalender">
             <i class='bx bx-calendar-check' aria-hidden="true"></i>
             <span>Simpan ke kalender</span>
@@ -128,7 +141,8 @@
             <div data-aos="zoom-in" data-aos-duration="1000"></div>
             <div data-aos="zoom-in" data-aos-duration="1000"></div>
         </div>
-        <a href="" role="link" target="_blank" aria-label="Lihat google maps" data-aos="zoom-in" data-aos-duration="1000">
+        <a href="" role="link" target="_blank" aria-label="Lihat google maps" data-aos="zoom-in"
+           data-aos-duration="1000">
             <i class="bx bxs-map-alt" aria-hidden="true"></i>
             <span>Lihat google maps</span>
         </a>
@@ -185,33 +199,29 @@
                     <option value="n">Tidak Hadir</option>
                 </select>
                 <label for="message">Ucapan & Doa</label>
-                <textarea name="message" id="message" placeholder="Tulis ucapan & Doa" required></textarea>
+                <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Tulis ucapan & Doa"
+                        required
+                        minlength="8"
+                ></textarea>
                 <button type="submit">Kirim</button>
             </form>
         </div>
 
         <div data-aos="zoom-in" data-aos-duration="1000">
-            <p style="margin-bottom: 0.5rem" >5 Orang telah mengucapkan</p>
+            <p style="margin-bottom: 0.5rem"></p>
             <hr>
 
-            <ul>
-                <li data-aos="zoom-in" data-aos-duration="1000">
-                    <div>S</div>
-                    <div>
-                        <h4>Sandi Perdiasah</h4>
-                        <p>15 Hari, 19 jam yang lalu <br>Hadir</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa delectus dignissimos
-                            distinctio dolorem inventore modi mollitia porro praesentium tempore!</p>
-                    </div>
-                </li>
-            </ul>
+            <ul aria-label="list comentar"></ul>
             <hr style="margin-top: 1rem">
             <div class="button-grup">
                 <button>
                     <i class="bx bxs-left-arrow-circle"></i>
                     <span>prev</span>
                 </button>
-                <span>1</span>
+                <span class="page-number"></span>
                 <button>
                     <span>next</span>
                     <i class="bx bxs-right-arrow-circle"></i>
@@ -236,7 +246,6 @@
 <footer>
     <p>Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan
         do'a restu kepada kedua mempelai.</p>
-    <h3>Hormat Kami <br><span>Lorem dan Ipsum</span></h3>
     <h2>Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
     <h4> اَلْحَمْدُ للَّهِ رَبِّ الْعالَمِينَ</h4>
     <div>

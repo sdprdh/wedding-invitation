@@ -1,14 +1,35 @@
 import {data} from "../assets/data/data.js";
-import {addClassElement, removeClassElement} from "../utils/helper.js";
+import {addClassElement, getQueryParameter, removeClassElement} from "../utils/helper.js";
 
 export const welcome = () => {
+    const welcomeElement = document.querySelector('.welcome');
     const homeElement = document.querySelector('.home');
     const navbarElement = document.querySelector('header nav');
-    const [audioMusic, audioButton] = document.querySelector('.audio').children;
 
-    addClassElement(homeElement, 'active');
-    addClassElement(navbarElement, 'active');
-    addClassElement(audioButton, 'show');
+    const [_, figureElement, weddingToElement, openWeddingButton] = welcomeElement.children;
+    const [audioMusic, audioButton] = document.querySelector('.audio').children;
+    const [iconButton] = audioButton.children;
+
+    const generateFigureContent = (bride) => {
+        const {L: {name: brideLName}, P: {name: bridePName}, couple: coupleImage} = bride;
+        return `
+            <img src="${coupleImage}" alt="couple animation">
+            <figcaption>
+                ${brideLName.split(' ')[0]} & ${bridePName.split(' ')[0]}
+            </figcaption>`;
+    };
+
+    const generateParameterContent = () => {
+        const name = document.querySelector('#name');
+        const params = getQueryParameter('to');
+
+        if (params) {
+            weddingToElement.innerHTML = `Kepada Yth Bapak/Ibu/Saudara/i<br><span>${params}</span>`;
+            name.value = params;
+        } else {
+            weddingToElement.innerHTML = `Kepada Yth Bapak/Ibu/Saudara/i<br><span>Teman-teman semua</span>`;
+        }
+    }
 
     const initialAudio = () => {
         let isPlaying = false;
@@ -16,9 +37,8 @@ export const welcome = () => {
         audioMusic.innerHTML = `<source src=${data.audio} type="audio/mp3"/>`;
 
         audioButton.addEventListener('click', () => {
-            const [iconButton] = audioButton.children;
 
-            if (!isPlaying) {
+            if (isPlaying) {
                 addClassElement(audioButton, 'active');
                 removeClassElement(iconButton, 'bx-play-circle');
                 addClassElement(iconButton, 'bx-pause-circle');
@@ -33,5 +53,30 @@ export const welcome = () => {
         });
     };
 
+    openWeddingButton.addEventListener('click', () => {
+        addClassElement(document.body, 'active');
+        addClassElement(welcomeElement, 'hide');
+
+        setTimeout(() => {
+            addClassElement(homeElement, 'active');
+            addClassElement(navbarElement, 'active');
+            addClassElement(audioButton, 'show');
+            removeClassElement(iconButton, 'bx-play-circle');
+            addClassElement(iconButton, 'bx-pause-circle');
+            audioMusic.play();
+        }, 1500);
+
+        setTimeout(() => {
+            addClassElement(audioButton, 'active');
+        }, 3000);
+    });
+
+    const initializeWelcome = () => {
+        figureElement.innerHTML = generateFigureContent(data.bride);
+        generateParameterContent();
+        addClassElement(welcomeElement, 'active');
+    }
+
+    initializeWelcome();
     initialAudio();
 }

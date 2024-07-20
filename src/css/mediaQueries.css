@@ -17,7 +17,7 @@
 
     .bride i:nth-of-type(1) {
         right: 1.4rem;
-        top: 12.5rem;
+        top: 2.6rem;
     }
 
     .bride i:nth-of-type(2) {
@@ -107,9 +107,13 @@
 
     .galeri div:nth-of-type(2) > div {
         margin-top: -1rem;
-        padding: 1rem;
+        padding: 2rem 1rem;
         grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
         gap: 1rem;
+    }
+
+    .galeri div:nth-of-type(2) > div img {
+        border-radius: 15px;
     }
 
     .galeri div:nth-of-type(2) button {
@@ -178,7 +182,7 @@
     }
 
     footer h2 {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     footer > div a {
