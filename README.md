@@ -144,4 +144,4 @@ Copy the provided URL. If you encounter errors, redeploy as cross-origin issues 
 
 ---
 
-Terima kasih dan semoga hari pernikahan Anda berjalan lancar dan penuh kebahagiaan! 😊
+Thank you for visiting the repository. I hope your wedding day is smooth and filled with joy! 😊
