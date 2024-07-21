@@ -1,5 +1,3 @@
-# Wedding Invitation Website
-
 ## Demo
 
 [![Wedding Invitation](https://img.shields.io/badge/Demo-Wedding%20Invitation-blue?style=for-the-badge&logoColor=white)](https://sandiperdiansah.github.io/wedding-invitation)
@@ -141,6 +139,10 @@ Copy the provided URL. If you encounter errors, redeploy as cross-origin issues 
 
 5. **Navbar Customization**: If you want to change the icons, adjust them as needed. Using the provided icons can
    simplify the process.
+
+## Design Acknowledgment
+
+This project redesigns the wedding invitation from [Dewanakl's GitHub repository](https://github.com/dewanakl). The design inspiration and layout have been adapted and customized to enhance functionality and aesthetics.
 
 ---
 
