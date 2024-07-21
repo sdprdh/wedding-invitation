@@ -113,6 +113,8 @@ export const wishas = () => {
 
             await comentarService.addComentar(comentar);
 
+            lengthComentar += ++response.comentar.length;
+
             peopleComentar.textContent = `${++response.comentar.length} Orang telah mengucapkan`;
             containerComentar.insertAdjacentHTML('afterbegin', listItemComentar(comentar));
         } catch (error) {

@@ -1,9 +1,9 @@
-export const comentarService = {
-    url: 'https://script.google.com/macros/s/AKfycbw20dzmJFBhCGIOMJXuKadQa9HQkABtLK47t-SWU9JMLeR25NiU5vF1Dxk0I3k_HmSZCQ/exec',
+import {data} from "../assets/data/data.js";
 
+export const comentarService = {
     getComentar: async function () {
         try {
-            const response = await fetch(this.url);
+            const response = await fetch(data.api);
             return await response.json();
         } catch (error) {
             return {error: error && error.message};
@@ -21,7 +21,7 @@ export const comentarService = {
         };
 
         try {
-            const response = await fetch(this.url, {
+            const response = await fetch(data.api, {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
