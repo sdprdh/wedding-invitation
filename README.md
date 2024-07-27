@@ -2,6 +2,7 @@
 
 [![Wedding Invitation](https://img.shields.io/badge/Demo-Wedding%20Invitation-blue?style=for-the-badge&logoColor=white)](https://sandiperdiansah.github.io/wedding-invitation)
 
+
 ## Features
 
 - **Data Storage**: Uses Google Sheets API for storing and managing invitation data.
@@ -53,8 +54,9 @@
 
 2. **Adjust the Table in Your Sheets**:
    ![Spreadsheet Table](src/assets/images/readme5.png)
+   The table consists of (id, name, status, message, date, color)
 
-3. **Add Google Apps Script**:
+4. **Add Google Apps Script**:
     - Open the Google Sheets file, go to Extensions > Apps Script, and add the following code:
 
     ```javascript
@@ -127,7 +129,7 @@
     };
     ```
 
-4. **Deploy the Script**:
+5. **Deploy the Script**:
     - Click "Deploy" and select "New deployment".
     - Choose "Web app" in the deployment settings.
 
