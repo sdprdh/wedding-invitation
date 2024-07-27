@@ -87,9 +87,14 @@ export const wishas = () => {
             lengthComentar = comentar.length;
             comentar.reverse();
 
-            renderElement(comentar.slice(startIndex, endIndex), containerComentar, listItemComentar);
-            peopleComentar.textContent = `${comentar.length} Orang telah mengucapkan`;
+            if (comentar.length > 0) {
+                peopleComentar.textContent = `${comentar.length} Orang telah mengucapkan`;
+            } else {
+                peopleComentar.textContent = `Belum ada yang mengucapkan`;
+            }
+
             pageNumber.textContent = '1';
+            renderElement(comentar.slice(startIndex, endIndex), containerComentar, listItemComentar);
         } catch (error) {
             return `Error : ${error.message}`;
         }
@@ -113,7 +118,7 @@ export const wishas = () => {
 
             await comentarService.addComentar(comentar);
 
-            lengthComentar += ++response.comentar.length;
+            lengthComentar = response.comentar.length;
 
             peopleComentar.textContent = `${++response.comentar.length} Orang telah mengucapkan`;
             containerComentar.insertAdjacentHTML('afterbegin', listItemComentar(comentar));
@@ -154,7 +159,7 @@ export const wishas = () => {
     }
 
     nextButton.addEventListener('click', async () => {
-        if (endIndex < lengthComentar) {
+        if (endIndex <= lengthComentar) {
             currentPage++;
             startIndex = (currentPage - 1) * itemsPerPage;
             endIndex = startIndex + itemsPerPage;
