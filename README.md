@@ -1,6 +1,6 @@
 ## Demo
 
-[![Wedding Invitation](https://img.shields.io/badge/Demo-Wedding%20Invitation-blue?style=for-the-badge&logoColor=white)](https://sandiperdiansah.github.io/wedding-invitation)
+[![Wedding Invitation](https://img.shields.io/badge/Demo-Wedding%20Invitation-blue?style=for-the-badge&logoColor=white)](https://sandiperdiansah.github.io/wedding-invitation?to=Sandi%20Perdiansah)
 
 
 ## Features
