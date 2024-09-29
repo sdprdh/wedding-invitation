@@ -1,8 +1,3 @@
-## Demo
-
-[![Wedding Invitation](https://img.shields.io/badge/Demo-Wedding%20Invitation-blue?style=for-the-badge&logoColor=white)](https://sandiperdiansah.github.io/wedding-invitation?to=Sandi%20Perdiansah)
-
-
 ## Features
 
 - **Data Storage**: Uses Google Sheets API for storing and managing invitation data.
